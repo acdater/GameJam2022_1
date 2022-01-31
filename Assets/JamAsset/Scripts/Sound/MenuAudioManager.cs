@@ -37,4 +37,9 @@ public class MenuAudioManager : MonoBehaviour
     {
         clickingAudioSource.Play();
     }
+
+    public void StopLoopAudio()
+    {
+        loopMelodieSource.Stop();
+    }
 }

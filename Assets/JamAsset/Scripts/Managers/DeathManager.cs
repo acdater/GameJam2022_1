@@ -28,6 +28,7 @@ public class DeathManager : MonoBehaviour
 
     public void Defeat()
     {
+        MenuAudioManager.Instance.StopLoopAudio();
         m_DefeatUI.SetActive(true);
         Time.timeScale = 0.0f;
     }
