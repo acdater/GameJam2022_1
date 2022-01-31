@@ -6,12 +6,13 @@ public class WeaponController : MonoBehaviour
 {
     [SerializeField] private Transform m_FirePoint;
     [SerializeField] private GameObject m_BulletPrefab;
+    [SerializeField] private AudioSource m_AudioSource;
 
     private Coroutine m_FireCoroutine;
 
     void Start()
     {
-        
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -56,10 +57,19 @@ public class WeaponController : MonoBehaviour
     private IEnumerator FireBullet(Vector3 _target)
     {
         var _bullet = Instantiate(m_BulletPrefab, m_FirePoint.position, m_BulletPrefab.transform.rotation);
+
+        PlayShotSound();
+
+
         _bullet.GetComponent<BulletController>().SetTarget(_target);
 
         yield return new WaitForSeconds(1.5f);
 
         m_FireCoroutine = null;
+    }
+
+    private void PlayShotSound()
+    {
+        m_AudioSource.Play();
     }
 }

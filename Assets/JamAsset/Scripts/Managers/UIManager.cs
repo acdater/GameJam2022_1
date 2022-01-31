@@ -42,4 +42,6 @@ public class UIManager : MonoBehaviour
         int _level = levelManager.GetCurrentLevel();
         levelText.text = "LEVEL: " + _level.ToString();
     }
+
+
 }

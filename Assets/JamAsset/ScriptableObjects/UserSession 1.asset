@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: UserSession 1
   m_EditorClassIdentifier: 
   m_Score: 0
-  m_UserName: Alex
+  m_UserName: 
   m_MaxLevel: 0
