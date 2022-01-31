@@ -71,6 +71,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.Instance.LoadGameScene();
     }
 
+    public void ExitTheGame()
+    {
+        Application.Quit();
+    }
+
     private void UpdateButtonsText()
     {
         for (int i=0; i<availableSessions.Length; i++)
