@@ -27,6 +27,7 @@ public class SceneManager : MonoBehaviour
 
     public LevelManager levelManager;
     public GameLevel m_GameLevel;
+    public int m_MaxLevelNumber = 2;
 
     public void ReloadScene()
     {
@@ -58,7 +59,7 @@ public class SceneManager : MonoBehaviour
     public void LoadNextRandomGameScene()
     {
         m_GameLevel.level += 1;
-        int _idx = Random.Range(1,5);
+        int _idx = Random.Range(1, m_MaxLevelNumber);
         levelManager.UpdateUserSessionData();
         UnityEngine.SceneManagement.SceneManager.LoadScene(_idx);
 

@@ -31,6 +31,8 @@ public class MainMenuManager : MonoBehaviour
 
     public void SelectUserButton(int _idx)
     {
+        MenuAudioManager.Instance.PlayClickSound();
+
         if (availableSessions[_idx].UserName != string.Empty)
         {
             m_GameData.currentPlayerSession = availableSessions[_idx];
@@ -48,7 +50,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void RemovePlayer()
     {
-        for(int i=0; i<availableSessions.Length; i++)
+        MenuAudioManager.Instance.PlayClickSound();
+
+        for (int i=0; i<availableSessions.Length; i++)
         {
             if (availableSessions[i].UserName == m_GameData.currentPlayerSession.UserName)
             {
@@ -61,6 +65,8 @@ public class MainMenuManager : MonoBehaviour
 
     public void LoadGame()
     {
+        MenuAudioManager.Instance.PlayClickSound();
+
         m_GameLvl.level = 0;
         SceneManager.Instance.LoadGameScene();
     }
