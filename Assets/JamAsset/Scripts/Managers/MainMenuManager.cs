@@ -67,6 +67,17 @@ public class MainMenuManager : MonoBehaviour
     {
         MenuAudioManager.Instance.PlayClickSound();
 
+        if (m_GameData.currentPlayerSession == null)
+        {
+            if (m_GameData.usersBoard.Count > 0)
+            {
+                m_GameData.currentPlayerSession = m_GameData.usersBoard[0];
+            }
+            else
+            {
+                return;
+            }
+        }
         m_GameLvl.level = 0;
         SceneManager.Instance.LoadGameScene();
     }

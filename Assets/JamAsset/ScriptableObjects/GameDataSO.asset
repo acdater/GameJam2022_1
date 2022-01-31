@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GameDataSO
   m_EditorClassIdentifier: 
   usersBoard: []
-  currentPlayerSession: {fileID: 0}
+  currentPlayerSession: {fileID: 11400000, guid: 9f5337b4edf20410e8ca2bc70494f45c, type: 2}
