@@ -19,7 +19,7 @@ public class TilesSpawner : MonoBehaviour
 
     public void SpawnTiles(Vector2 _boardSize)
     {
-        Vector3 _startPoint = Vector3.zero;
+        Vector3 _startPoint = Vector3.up;
         _startPoint.y = 0.001f;
 
         for(int i=0; i<_boardSize.y; i++)
