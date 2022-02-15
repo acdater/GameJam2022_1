@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1406644513287550637}
   - component: {fileID: 6199212897143486008}
-  - component: {fileID: 7522432508362821634}
   - component: {fileID: -1268441648226700276}
+  - component: {fileID: 1126843843429001399}
   m_Layer: 0
   m_Name: Victim
   m_TagString: Untagged
@@ -49,19 +49,6 @@ MonoBehaviour:
   m_levelManager: {fileID: 7472747345326725134, guid: eb4cc7d3c7bb9496da91738860ef5c22, type: 3}
   m_IsSaved: 0
   m_IsDamaged: 0
---- !u!135 &7522432508362821634
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8772967267598141997}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.35
-  m_Center: {x: 0, y: 0.45, z: 0}
 --- !u!54 &-1268441648226700276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78,6 +65,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!65 &1126843843429001399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772967267598141997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.01, z: 0.1}
+  m_Center: {x: 0, y: 0.3, z: 0.1}
 --- !u!1001 &8609936094917183116
 PrefabInstance:
   m_ObjectHideFlags: 0

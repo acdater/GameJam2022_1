@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f6904f569b4211a5927ed4b48305f, type: 3}
   m_Name: GameDataSO
   m_EditorClassIdentifier: 
-  usersBoard: []
+  usersBoard:
+  - {fileID: 11400000, guid: 9f5337b4edf20410e8ca2bc70494f45c, type: 2}
   currentPlayerSession: {fileID: 11400000, guid: 9f5337b4edf20410e8ca2bc70494f45c, type: 2}
